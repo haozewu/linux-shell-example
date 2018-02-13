@@ -1,18 +1,31 @@
 #your system
-system=centos7
+system=centos6
 
 #change network
-network_config=yes
+network_config=0
 #start from 128 to 254
-ip=192.168.183.130
+ip=192.168.254.130
 netmask=255.255.255.0
 #mac=00:0C:29:03:F3:76
-dns=192.168.183.2
+dns=192.168.254.2
 #hostName=master
-gateway=192.168.183.2
+gateway=192.168.254.2
 #ethname=ens33
 
 #close iptables4
+
+#user_manager
+
+user_manager=1
+
+#adduser
+adduser=0
+adduser_name=6789
+
+#deluser
+userdel=1
+userdel_name=12345
+
 
 
 

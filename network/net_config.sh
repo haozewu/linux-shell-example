@@ -11,9 +11,10 @@ ubuntu_network_config(){
 }
 
 centos6_network_config(){
-	sed -i "s#BOOTPROTO=\"dhcp\"#BOOTPROTO=static#g" /etc/sysconfig/network-scripts/ifcfg-eth0
-	sed -i "s#IPV6INIT=\"yes\"#IPV6INIT=no#g" /etc/sysconfig/network-scripts/ifcfg-eth0
-	echo -e "\nBOOTPROTO=static\nONBOOT=yes\nIPADDR=$ip\nNETMASK=$netmask\nGATEWAY=$gateway\nDNS1=$dns\nIPV6INIT=no" >> /etc/sysconfig/network-scripts/ifcfg-eth0
+	network_config_filename=ls /etc/sysconfig/network-scripts | grep "eth0"
+	sed -i "s#BOOTPROTO=\"dhcp\"#BOOTPROTO=static#g" /etc/sysconfig/network-scripts/$network_config_filename
+	sed -i "s#IPV6INIT=\"yes\"#IPV6INIT=no#g" /etc/sysconfig/network-scripts/$network_config_filename
+	echo -e "IPADDR=$ip\nNETMASK=$netmask\nGATEWAY=$gateway\nDNS1=$dns\nIPV6INIT=no" >> /etc/sysconfig/network-scripts/$network_config_filename
 	service ip6tables stop
 	chkconfig ip6tables off
 	service network restart
