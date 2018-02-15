@@ -1,7 +1,7 @@
 #your system
-system=centos6
+system='centos6'
 
-#change network
+######################change network######################
 network_config=0
 #start from 128 to 254
 ip=192.168.254.130
@@ -14,18 +14,23 @@ gateway=192.168.254.2
 
 #close iptables4
 
-#user_manager
+#######################user_manager#######################
 
-user_manager=1
+user_manager=0
 
 #adduser
 adduser=0
 adduser_name=6789
 
 #deluser
-userdel=1
+userdel=0
 userdel_name=12345
 
+######################software install####################
+#install?
+if_install=1
+
+install_python27=1
 
 
 
