@@ -1,2 +1,5 @@
 # mpienv-install
-only write shell for CentOS6 plantform
+
+
+aim to config all the linux service
+
