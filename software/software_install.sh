@@ -2,6 +2,11 @@
 
 install_python27()
 {
+	#zlib
+	#openssl
+	#setuptools
+	#pip
+	#sqlite3
 	if [[ $1 -eq 'centos6' ]]; then
 		wget https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tar.xz
 		tar -Jxvf  Python-2.7.14.tar.xz
@@ -24,6 +29,9 @@ install_python27()
 		#python get-pip.py
 		#rm -rf get-pip.py
 	fi
+
+	#after  that, install sqlite3 before run qqbot
+	wget http://www.sqlite.org/2018/sqlite-autoconf-3220000.tar.gz
 
 
 
