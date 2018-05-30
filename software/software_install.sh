@@ -16,7 +16,7 @@ install_python27()
 		make install
 		cd ..
 		rm -rf Python-2.7.14
-		rm -rf Python-2.7.14.tar
+		#rm -rf Python-2.7.14.tar
 
 		#note:yum should run in python26,so config the yum configuration
 		#sed -i "s/#!\/usr\/bin\/python/#!\/usr\/bin\/python2.6/g" /usr/bin/yum
