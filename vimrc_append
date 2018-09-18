@@ -1,11 +1,10 @@
-" Add by Haoze
 syntax on
 set autoindent
 set cindent
-
+set ts=4
+set expandtab
 set ruler
 set number
-" set cursorcolumn
 autocmd BufNewFile *.py,*.sh, exec ":call SetTitle()"
 let $author_name = "#"
 let $author_email = "#"
