@@ -52,3 +52,9 @@ export https_proxy="socks5://127.0.0.1:1080"
 ### basic
 
 https://git-scm.com/docs/user-manual.html
+
+```
+git commit
+git merge
+git fetch
+```
