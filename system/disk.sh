@@ -1,5 +1,7 @@
 # 分区表的概念：磁盘类型，例如ext，gpt，nfts
 
+df -hl # 查看磁盘使用情况
+
 lsblk # 查看块设备及挂载情况
 
 fdisk -l /dev/sdx # 查看/dev/sdx的使用情况

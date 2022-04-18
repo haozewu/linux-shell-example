@@ -1,6 +1,4 @@
 #!/bin/bash
 
-add_user()
-{
-	adduser $1
-}
+adduser $1
+

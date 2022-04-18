@@ -1,6 +1,0 @@
-wget
-
-tar -zxvf 
-
-unzip
-

@@ -1,3 +1,4 @@
+"将本文件放在~下
 syntax on
 set autoindent
 set smartindent
@@ -6,7 +7,12 @@ set shiftwidth=4
 set ts=4
 set expandtab
 set ruler
+"行号
 set number
+
+"设置高亮搜索
+set hlsearch
+
 autocmd BufNewFile *.py,*.sh, exec ":call SetTitle()"
 let $author_name = "#"
 let $author_email = "#"
