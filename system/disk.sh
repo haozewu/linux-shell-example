@@ -24,3 +24,5 @@ mkfs -t ext4 /dev/sdx1
 
 mount /dev/sdx1 /dir # 挂载分区
 mount -t ntfs-3g /dev/sdx1 /dir # 挂载ntfs格式（通常是windows）块设备
+# 事先需要安装ntfs-3g
+

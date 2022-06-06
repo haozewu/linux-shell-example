@@ -10,4 +10,10 @@
 - software 常用软件的配置与操作、包含git、mysql、iotdb、压缩解压等
 - pending 等待进一步处理的历史遗留文件
 
-欢迎提交pr :-)
+优质相似资源
+
+1. Linux Command
+
+项目链接：https://github.com/jaywcjlove/linux-command
+
+对应链接：https://wangchujiang.com/linux-command/
